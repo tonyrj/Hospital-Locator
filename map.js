@@ -4,7 +4,6 @@ if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
 } else {
     alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
-
 }
 
 function successFunction(position) {
@@ -16,8 +15,7 @@ function successFunction(position) {
     return lat;
 }
 function errorFunction(position){
-
-    console.log("shit");
+    window.stop() 
 }});
 
             // var sydney = new google.maps.LatLng(12.850412, 80.2241513);
@@ -30,12 +28,12 @@ function initialize() {
 
   map = new google.maps.Map(document.getElementById('map'), {
       center: location,
-      zoom: 15
+      zoom: 20
     });
 
   var request = {
     location: location,
-    radius: '2000',
+    radius: '3000',
     type: ['hospital']
   };
 

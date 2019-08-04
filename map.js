@@ -4,7 +4,6 @@ if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(successFunction, errorFunction);
 } else {
     alert('It seems like Geolocation, which is required for this page, is not enabled in your browser. Please use a browser which supports it.');
-    window.stop() 
 
 }
 
@@ -17,7 +16,6 @@ function successFunction(position) {
     return lat;
 }
 function errorFunction(position){
-    window.stop() 
 
     console.log("shit");
 }});

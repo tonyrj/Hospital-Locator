@@ -7,10 +7,12 @@
         crossorigin="anonymous"></script>
     <style>
        /* Set the size of the div element that contains the map */
+      @media only screen and (max-width: 768px) {
       #map {
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
        }
+      }
        @media only screen and (max-width: 768px) {
            #map{
             height: 100%;  /* The height is 400 pixels */
@@ -18,7 +20,8 @@
         overflow:hidden;
     padding-bottom:176%;
     position:relative;
-           }
+         }
+      }
     </style>
   </head>
   <body>
